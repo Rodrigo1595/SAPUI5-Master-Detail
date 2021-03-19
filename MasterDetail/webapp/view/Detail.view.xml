@@ -1,0 +1,31 @@
+<mvc:View controllerName="MasterDetail.MasterDetail.controller.Detail" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
+    xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+>       
+    <Page
+		title="{modeloSelectedItem>/codigo_producto}"
+		showNavButton="true"
+		navButtonPress="onNavBack">
+		<content>
+			<f:SimpleForm title="Detalle Producto">
+				<f:content>
+					<Label text="Codigo Producto"/>
+					<Text id="codigo_producto" text="{modeloSelectedItem>/codigo_producto}" />
+					<Label text="Codigo Interno"/>
+					<Text text="{modeloSelectedItem>/cod_interno}" />
+                    <Label text="Fecha Creacion"/>
+					<Text text="{modeloSelectedItem>/fecha_creacion}" />
+					<Label text="Fecha Vencimiento"/>
+					<Text text="{modeloSelectedItem>/fecha_vencimiento}" />
+                    <Label text="Descuento Producto"/>
+					<Text text="{modeloSelectedItem>/desc_producto}" />
+					<Label text="Nombre Empresa"/>
+					<Text text="{modeloSelectedItem>/nombre_empresa}" />
+                    <Label text="Origen"/>
+					<Text text="{modeloSelectedItem>/origen}" />
+				</f:content>
+			</f:SimpleForm>
+		</content>
+	</Page>
+
+</mvc:View>

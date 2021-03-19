@@ -1,0 +1,14 @@
+<mvc:View controllerName="MasterDetail.MasterDetail.controller.mainMaster" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page title="MASTER-DETAIL-APP" >
+        <List
+				items="{modeloProductos>/values}"
+				mode="SingleSelectMaster"
+				selectionChange="onSelectionChange">
+			<items>
+				<StandardListItem title="{modeloProductos>codigo_producto}" 
+					type="Active"
+					press="onSelectionChange"/>
+			</items>
+		</List>
+    </Page>
+</mvc:View>
